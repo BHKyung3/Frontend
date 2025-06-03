@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*reset*/
+        * {margin: 0; padding: 0; box-sizing: border-box; font-family: "맑은 고딕";}
+        ul,ol,li {list-style: none; margin: 0; padding: 0; }
+
+        header {width: 1200px; height: 160px; margin: 0 auto;}
+
+        #logo {width: 220px; height: 100px; margin: 20px 0 0 10px; float: left;}
+        #logo > img {width: 220px; height: 100px; margin: 10px 0 0 20px; float: left;}
+
+        #login {width: 295px; height: 30px; margin: 20px 30px 0 0; float: right;}
+        #login ul {font-size: 12px; color: #666;}
+        #login li {float: left; margin: 0 5px;}
+        #login li a {text-decoration: none; color: #666;}
+        
+        nav {width: 920px; height: 40px; float: left; margin: 20px 0 0 50px;}
+        nav > ul > li > a {text-decoration: none; color: #000; font-weight: bold;
+            margin: 0 30px; font-size: 19px; float: left;}
+        nav > ul > li > a:hover {color: green;}
+
+
+        #slider {width: 1400px; height: 500px; margin: 0 auto;}
+        #slider > img {width: 100%; height: 100%;}
+
+        section {width: 1200px; height: 1400px; margin: 0 auto;
+            padding: 30px 0; text-align: center; background-color: aqua;}
+        
+        #top-section {width: 1200px; height: 600px; background-color: gold; margin: 0 auto;}
+        #top-section > h3 {font-size:22px; color:green; text-align:center; line-height:30px; margin: 20px 0 10px 0}
+        #top-section > p {font-size: 16px; color: #000; text-align: center; line-height: 10px; padding: 0px;}
+        #top-section > .box {width: 250px; height: 250px; background-color: red; display: inline-block; margin: 10px 10px;}
+
+        #bottom-section {width: 1200px; height: 600px; background-color: tomato; margin: 0 auto;}
+        #bottom-section > h3 {font-size:22px; color: red; text-align:center; line-height:30px; margin: 40px 0 10px 0}
+        #bottom-section > p {font-size: 16px; color: #000; text-align: center; line-height: 10px; padding: 0px;}
+        #bottom-section > .box {width: 200px; height: 200px; background-color: blue; display: inline-block; margin: 10px 10px;}
+
+
+        footer {width: 1200px; height: 140px; margin: 0 auto;}
+        #bottom {width: 1200px; height: 140px; margin: 10px auto; }
+        #bottom > ul {width: 900px; height: 10px; float: left; margin: 10px 0 0 20px;
+            color: #666; }
+        #bottom > ul > li {font-size: 12px; margin: 5px 10px; float: left; text-decoration: none;}
+        #bottom > ul > li > a {text-decoration: none; color: #666;}
+        #bottom > p {width: 800px; height: 50px; line-height: 150px; margin: 10px 0 0 20px;
+            float: left; font-size: 12px;}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="https://blog.kakaocdn.net/dn/6ui8u/btqDtzRrCzg/ZM8q87L5frjEl0za6UnIk1/img.jpg"
+            alt="로고"></div>
+        <div id="login">
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li>|</li>
+                <li><a href="#">회원가입</a></li>
+                <li>|</li>
+                <li><a href="#">Q & A</a></li>
+                <li>|</li>
+                <li><a href="#">Language</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">특가할인</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">REVIEW</a></li>
+                <li><a href="#">쿠폰/혜택</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="slider"><img src="https://image11.coupangcdn.com/image/cmg/oms/banner/a13bdfb9-abe6-4db3-879d-68377709c2ea_1280x423.jpg"
+        alt="슬라이더 이미지"></div>
+    <section>
+        <div id="top-section">
+            <h3>이상품 어때요?</h3>
+            <p>오늘의 상품입니다.</p>
+
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+        </div>
+        <div id="bottom-section">
+            <h3>지금 뜨고 있는 맞춤 베스트</h3>
+            <p>고객님을 위핸 맞춤 Pick</p>
+
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+        </div>
+    </section>
+    <footer>
+        <div id="bottom">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li>|</li>
+                <li><a href="#">BUSINESS PRACTICE OFFICE</a></li>
+                <li>|</li>
+                <li><a href="#">COPYRIGHT</a></li>
+                <li>|</li>
+                <li><a href="#">CONTACT US</a></li>
+                <li>|</li>
+                <li><a href="#">SITEMAP</a></li>
+                <li>|</li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li>|</li>
+                <li><a href="#"><a href="#">Fiat Chrysler Automobiles (FCA)</a></li>
+                <li>|</li>
+                <li><a href="#">Chrysler</a></li>
+                <li>|</li>
+                <li><a href="#">FIAT®</a></li>
+            </ul>
+            <p>ⓒ 2016 Fiat Chrysler Automobiles (FCA). All Rights Reserved.
+                Chrysler, Jeep 및 FIAT 로고는 Fiat Chrysler Automobiles (FCA)의 등록 상표입니다.</p>
+        </div>
+    </footer>
+</body>
+</html>

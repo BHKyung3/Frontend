@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>마이페이지</title>
+</head>
+<body>
+	<table border="1" style="text-align:center;">
+		<td>${loginUser.name}( ${loginUser.userid} )님 반갑습니다.</td>
+		<td>레벨 : ${loginUser.lev}</td>
+		<td>로그인</td>
+		<td>사원등록<br>(관리자로 로그인 후 사용 가능)</td>
+		<td>마이페이지<br>(로그인 후 사용 가능)</td>
+	</table>
+	<h2>회원 전용 페이지</h2>
+	<form action="logout.do">
+		<table>
+			<tr>
+				<td>안녕하세요. ${loginUser.name}( ${loginUser.userid} )님</td> <!-- 로그인한 회원의 이름과 아이디를 출력 -->
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="로그아웃">&nbsp;&nbsp;
+					<input type="button" value="회원정보변경"
+						onclick = "location.href='memberUpdate.do?userid=${loginUser.userid}'">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

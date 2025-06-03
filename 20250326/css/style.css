@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+li {
+    color: blue;
+    list-style: disc;
+}
+
+.b1 { /* class = b1에 해당(.이 기재되어 있으면 class) */
+    color: tomato;
+}
+
+#it1 { /* id = itl에 해당(#이 기재되어 있으면 id)*/
+    background-color: aqua;
+}
+
+div h3 { /* div안에 있는 h3 */
+    color: chocolate;
+}
+
+body > h3 { /* body안에 있는 h3 */
+    color: darkturquoise;
+}
+
+h1 {
+    font: 24px;
+    color: aquamarine;
+}

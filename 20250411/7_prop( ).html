@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title> 객체 조작 및 생성 </title>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script>
+$(function(){
+  $("#st_1").prop("title","단락 태그"); // title 속성 추가
+  $("#txt1").text( $("#st_1").prop("title") ); // title 속성 문구 노출
+  $("#txt2").text( $("#st_1").prop("tagName") ); // st_1 요쇼의 테크 명을 가져와 문구 노출한다
+  $("#txt3").text( $("#sel").prop("selectedIndex") ); // 아이디 sel에 기재된 내용 중 selected 에 해당 하는 문구를 선 노출하고 몇 번째 인지 노출
+});
+</script>
+</head>
+
+<body>
+  <p id="st_1">내용1</p>
+  <p id="txt1"></p>
+  <p id="txt2"></p>
+  <select id="sel">
+   <option value="naver">네이버</option>
+   <option value="nate" selected="selected">네이트</option>
+   <option value="daum">다음</option>
+  </select>
+  <p id="txt3"></p>
+</body>
+</html>

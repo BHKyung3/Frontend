@@ -1,0 +1,40 @@
+/* reset */
+* {margin: 0 auto; padding: 0; box-sizing: border-box; font-family: "맑은 고딕";}
+ul,ol,li {list-style: none; margin: 0; padding: 0;}
+
+header {height: 210px; width: 1765px; margin: 0 auto;}
+/* 로고 */
+.logo {width: 210px; height: 60px; float: left; margin: 65px 0 0 585px}
+.logo img {width:100%; height:100%;}
+/* 상태창2 */
+.login2 {width: 200px; height: 30px; float: left; margin: 20px 0;}
+.login2 ul li a {font-size: 13px; text-decoration: none; color: #666; float: left; margin: 5px 7px;}
+/* 상태창1 */
+.login {width: 510px; height: 30px; margin: 20px 0; float: right;}
+.login ul {font-size: 13px; color: #666;}
+.login li {float: left; margin: 5px 5px;}
+.login ul li a {font-size: 13px; text-decoration: none; float: left; margin: 5px 5px; color: #666;}
+/* 배너*/
+nav {width: 1150px; height: 50px; margin: 20px 0 0 330px; float: left;}
+nav > ul > li > a {text-decoration: none; color: #000; margin: 25px 30px; font-size: 14px; float: left;}
+/* 아이콘 */
+.icon {width: 150px; height: 40px; margin: 30px 0 0 0; float: right;}
+.icon > .iconbox > img {width:30px; height:30px; float:left; margin: 0 10px 0;}
+/* 슬라이더 */
+.slider {width:100%; height:595px; margin:0 auto;}
+.slider img {width: 100%; height: 100%;}
+
+/*Best상품*/
+section {width:1270px; height:3600px; margin:0 auto;}
+#best {width:1270px; height:1150px;  margin:0 auto; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+#best > h3 {width: 100%; font-size:23px; color:#000; text-align:center; line-height:20px; letter-spacing:2px;}
+#best > p {width: 100%; font-size:17x; color:#666; text-align:center; line-height:50px; margin:0 0 8px 0;}
+#best > ul {width: 100%; font-size:16px; color:#000; text-align:center; line-height:50px; margin:0 0 25px 0; display:flex; justify-content:center; flex-wrap:wrap; align-content:center;}
+#best > ul > li {float:left; margin:0 20px 0;}
+
+/*Best 상품 박스 8개*/
+#best > .box {width:300px; height:400px; margin:0 8px 60px;}
+#best > .box > img {width:100%; height:280px; margin:0 0 10px 0;}
+#best > .box > h4 {width:280px; font-size: 13px; margin:0 0 10px 0; float: left;}
+#best > .box > h5 {width:280px; font-size: 12px; margin:0 0 10px 0; float: left;}
+#best > .box > span {width:280px; font-size: 13px; float: left;}

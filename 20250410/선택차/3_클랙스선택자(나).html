@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        /* $(function(){
+            $(".direct").css("background-color","yellow"); // class direct에 해당하는 문구에 바탕을 노란색으로 한다.
+        }); */
+
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelectorAll(".direct").forEach(function(el) {
+                el.style.backgroundColor = "yellow";
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>제이쿼리</h1>
+   <h2>직접 선택자및 관계 선택자</h2>
+   <h3 class="direct">직접 선택자</h3>
+   <h3>관계 선택자</h3>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+  $("h1").dblclick(function(){ // h1에 기재된 문구를 dblclick 더블클릭 하면 숨겨라
+    $(this).hide(); 
+  });
+});
+</script>
+</head>
+<body>
+
+<p>If you click on me, I will disappear.</p>
+<h1>dblClick me away!</h1>
+<p>Click me too!</p>
+
+</body>
+</html>

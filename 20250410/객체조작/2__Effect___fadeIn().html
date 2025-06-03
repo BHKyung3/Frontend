@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){ // 버튼을 클릭하면면
+    $("#div1").fadeIn(); // 기본 속도로 div1이 가르키는걸 노출한다
+    $("#div2").fadeIn("slow"); // 느리게 div2가 가르키는걸 노출한다 // 빠르게 : fast
+    $("#div3").fadeIn(3000); // 3초동안 div3이 가르키는걸 노출한다
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Demonstrate fadeIn() with different parameters.</p>
+
+<button>Click to fade in boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+</body>
+</html>

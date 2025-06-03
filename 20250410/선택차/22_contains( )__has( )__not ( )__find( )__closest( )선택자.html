@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title> 선택자 </title>
+<style>
+#menu li{margin:5px 0;}
+</style>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script>
+$(function(){
+      $("#menu li:contains('내용3')").css("border","1px dashed red"); // menu 중 내용3에 해당 하는 문장에 빨간 선 표시
+      $("#menu li:has('strong')").css("border","2px solid blue"); // menu 중 strong이 포함된 문장에 2px 파란 선 표시
+      $("#menu li").not(":first").css("background-color","yellow"); // menu 중 첫번째(내용1)가 아닌 문장에 노란색 배경 표시
+      $("#menu li:eq(1)").find("strong").css("font-size","22px"); // menu 중 두번째(내용2) 중 strong가 포함된 문장 글씨 크기 22 표시
+      $("#menu").closest("div").css("border","5px double green"); // menu 조상 중 div(wrap, inner_wrap) 중 가장 가까운 조상이 포함된 문구에 초록 선 표시 
+   });
+</script>
+</head>
+<body>
+<h1>탐색 선택자</h1>
+<div id="wrap">
+   <div id="inner_wrap">
+      <ul id="menu">
+         <li>내용1</li>
+         <li>
+            <span>내용<strong>2</strong></span>
+         </li>
+         <li><a href="#">내용3</a></li>
+         <li>내용4</li>
+         <li>내용5</li>
+      </ul>
+   </div>
+</div>
+</body>
+</html>

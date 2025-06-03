@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Node</title>
+</head>
+<body>
+    <script>
+        const aEl = document.createElement("a"); // 요소 노드 생성하기
+        document.body.appendChild(aEl); // 생성된 노드 DOM 트리와 연결
+
+        const txtEl = document.createTextNode("길벗"); //텍스트 노드 추가하기
+        document.querySelector("a").appendChild(txtEl);
+
+        const hrefAttr = document.createAttribute("href"); // href 속성 노드 생성하기
+        hrefAttr.value = "https://www.naver.com";
+        document.querySelector("a").setAttributeNode(hrefAttr); // 요소 노드 연결
+    </script>
+</body>
+</html>

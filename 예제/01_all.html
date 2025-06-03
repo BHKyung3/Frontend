@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+      padding: 40px;
+    }
+
+    .form-wrapper {
+      max-width: 480px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e3269;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    .radio-group {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .radio-group label {
+      margin-right: 15px;
+      font-weight: normal;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .button-group input {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .button-group input[type="submit"] {
+      background-color: hsl(239, 75%, 53%);
+      color: white;
+      font-weight: bold;
+    }
+
+    .button-group input[type="submit"]:hover {
+      background-color: #3c4cd5;
+    }
+
+    .button-group input[type="reset"] {
+      background-color: #f1f1f1;
+      color: #333;
+    }
+  </style>
+
+    </style>
+</head>
+<body>
+    <h3>회원가입을 위한 정보를 입력해주세요!</h3>
+	
+	<form method="post" action="01_addMember.jsp">
+		<table>
+			<tr>
+				<td>이름</td>
+				<td><input type = "text" name = "name" size = "20"></td><br>
+			</tr>
+			<tr>
+				<td>아이디</td>
+				<td><input type = "text" name = "userid" size = "20"></td>
+			</tr>
+			<tr>
+				<td>비밀번호</td>
+				<td><input type = "password" name = "pwd" size = "20"></td>
+			</tr>
+			<tr>
+				<td>이메일</td>
+				<td><input type = "email" name = "email" size = "20"></td>
+			</tr>
+			<tr>
+				<td>전화번호</td>
+				<td><input type = "text" name = "phone" size = "20"></td>
+			</tr>
+			<tr>
+				<td>등급</td>
+				<td>
+					<input type = "radio" name = "admin" value = "1">관리자
+					<input type = "radio" name = "admin" value = "0" checked="checked">일반회원
+				</td>
+			</tr>
+			<tr>
+				<td colspan = "2" style = "text-align: center;"><br>
+					<input type = "submit" value = "전송">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type = "reset" value = "취소">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

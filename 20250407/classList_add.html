@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red-color {color: red;}
+        .fz20 {font-size: 20px;}
+    </style>
+</head>
+<body>
+    <p id="text">text</p>
+
+    <button id="changeStyleBth">스타일 변경</button>
+
+    <script>
+        const pE1 = document.querySelector("#text"); // 노드 선택하기
+        const btn = document.querySelector("#changeStyleBth");
+        
+        pE1.classList.add("red-color");
+        pE1.classList.add("fz20");
+
+        btn.addEventListener("click", function(){
+            pE1.classList.toggle("red-color"); // function 메소드 동작
+            pE1.classList.toggle("fz20"); //전원을 키고 끄는것 처럼 누르면 text 글씨가 변경됨
+        });
+    </script>
+</body>
+</html>

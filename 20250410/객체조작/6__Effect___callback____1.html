@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+
+//p를 hide하고 alert 함.  function 에서 function을 부르고 이름이 없는 함수 사용.
+
+
+
+$(document).ready(function(){
+  $("button").click(function(){ // 버튼을 누르면
+    $("p").hide("slow", function(){ // p에 기재된 글씨가 느리게 없어지면서
+      alert("The paragraph is now hidden"); // 해당 문구가 팝업으로 뜬다
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Hide</button>
+
+<p>This is a paragraph with little content.</p>
+
+</body>
+</html>

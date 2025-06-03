@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="test.jsp"> <!--목적이 반드시 있어야 함-->
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="id" size="30" placeholder="이름을 입력하세요." value="홍길동"
+                    maxlength="10" minlength="5" required>
+                    <!--name(중복 기재 불가), id 반드시 기재해야함-->
+                    <!--maxlength -> 최대 10개까지 기재, minlength => 최소 5개 기재-->
+                </li>
+                <li>
+                    <label for="mail">메일주소</label>
+                    <input type="email" name="email" id="mail" placeholder="메일주소를 입력하세요.">
+                </li>
+                <li>
+                    <label>전화번호</label>
+                    <input type="tel" name="phone" required>
+                </li>
+                <l1>
+                    <input type="range" value="1" max="5" min="1">
+                    <!--hidden => 사용자에게는 보이지 않지만 서버에는 보이는 값-->
+                </l1>
+                <li>
+                    <label>파일</label>
+                    <input type="file" name="file">
+                </li>
+                <li>
+                    <label>이미지</label>
+                    <input type="image" name="image">
+                </li>
+                <li>
+                    <input type="checkbox" name="mailing1" value="news1" checked>해외단신
+                    <input type="checkbox" name="mailing2" value="news2">국내단신
+                    <input type="checkbox" name="mailing3" value="news3">5분 회화
+                    <br>
+                    <input type="radio" name="subject1" value="자바">자바
+                    <input type="radio" name="subject2" value="파이썬" checked>파이썬
+                    <input type="radio" name="subject3" value="C++">C++
+                </li>
+
+            </ul>
+            <input type="submit" value="전송">
+        </fieldset>
+    </form>
+</body>
+</html>

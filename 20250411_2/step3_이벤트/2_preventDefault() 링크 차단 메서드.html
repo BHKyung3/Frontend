@@ -1,0 +1,34 @@
+<!DOCTYPE>
+<html >
+<head>
+<meta charset="utf-8" />
+<title> 이벤트 </title>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+<script>
+
+$(function(){
+  $("#btn1").click(function(){ 
+     $("p").css("background-color","purple");
+     return false; // return false; 의미 => e.preventDefault() → 기본 동작 막기 (링크 이동 X) // e.stopPropagation() → 이벤트 전파 중단
+     // 그럼으로 버튼 1을 눌러도 페이지 이동 않함
+  });
+
+  $("#btn2").click(function(e){ 
+      e.preventDefault(); // 기본 동작(링크 이동)을 막는다 => 페이지 이동 않함
+     $("p").css("background-color","yellow");
+  });
+
+  $("#btn3").click(function(){ 
+     $("p").css("background-color","aqua"); // 기본 동작을 막지 않아 해당 건만 링크로 이동
+  });
+});
+
+</script>
+</head>
+<body>
+   <a href="http://w3.org/" id="btn1">버튼1</a><br /><br />
+   <a href="http://w3.org/" id="btn2">버튼2</a><br /><br />
+   <a href="http://w3.org/" id="btn3">버튼3</a><br /><br />
+   <p>내용</p>
+</body>
+</html>

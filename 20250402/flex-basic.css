@@ -1,0 +1,21 @@
+* {margin: 0;}
+
+.flex-container {
+    width: 300px;
+    height: 200px;
+    background-color: #c4c4c4;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.flex-item {
+    color: white;
+    background-color: #ff5252;
+}
+
+.flex-item:nth-child(2n) {
+    background-color: #ee2;
+}
